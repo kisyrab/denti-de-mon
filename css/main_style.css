@@ -1,2 +1,143 @@
 @charset "utf-8";
 
+body{
+    background-color: burlywood;
+    color: #fff;
+    font-size: 16px;
+}
+
+#wrap{}
+.header{
+    width: 100%; height: 145px; 
+    position: fixed;
+    z-index: 10;
+}
+.head_inner{}
+
+.nav{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    /* position: fixed; */
+}
+
+.main{
+    /* padding: 10px 0; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-end; */
+    font-size: 20px;
+    /* border: 1px solid red; */
+}
+
+.main>li{position: relative;}
+
+.main>li>a{
+    display: block;
+    height: 145px;
+    line-height: 145px;
+    /* border: 1px solid red; */
+}
+
+.main>li:hover>a{
+    border-bottom: 2px solid white;
+}
+.main>li.logo_img:hover>a{border-bottom: none !important;}
+
+
+.main>li>img{}
+
+
+.sub{
+    /* display: none; */
+    position: absolute;
+    left: 0; top: 145px;
+    width: 250%;
+    font-size: 16px;
+    display: none;
+    /* text-align: center; */
+    z-index: 50;
+}
+
+.sub>li{}
+.sub>li:hover>a{text-shadow: 0 0 5px white;}
+.sub>li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub1{}
+.sub2{}
+.sub3{}
+.sub4{}
+.sub5{}
+.sub6{}
+.sub7{}
+
+
+
+/* ///////////////////////////////////contents 영역/////////////////////////// */
+
+#contents{}
+
+.box1{
+    width: 100%; height: 988px;
+    background-image: url("../img/main.gif");
+}
+
+.box2{
+    width: 100%; height: 988px;
+    background: url("../img/main2.jpg") center center / 120% 117% no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.pic{
+    border: 1px solid red;
+    width: 960px;
+    height: 988px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box2 .left1{
+    width: 273px; height: 459px;
+    background: url("../img/doc2.jpg");
+    margin-right: 100px;
+}
+.box2 .left2{
+    width: 273px; height: 459px;
+    background: url("../img/tool1.jpg") no-repeat center / cover;
+}
+
+.right{
+    border: 1px solid red;
+    /* width: 960px; */
+    /* height: 988px; */
+    text-shadow: 0 0 5px gray;
+    /* padding: 200px 50px 300px 350px; */
+    text-align: right;
+}
+.right h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+.right h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.right h3{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.right h4{letter-spacing: 1px; font-weight: lighter;}
+.right .h4-1{}
+.right .h4-2{}
+.right .h4-3{}
+.right .h4-4{}
