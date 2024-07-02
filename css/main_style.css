@@ -1,7 +1,11 @@
 @charset "utf-8";
 
+/* html,body{
+    height: 100%;
+} */
+
 body{
-    background-color: burlywood;
+    background-color: #F6E6CB;
     color: #fff;
     font-size: 16px;
 }
@@ -39,7 +43,7 @@ body{
 }
 
 .main>li:hover>a{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
 }
 .main>li.logo_img:hover>a{border-bottom: none !important;}
 
@@ -59,7 +63,7 @@ body{
 }
 
 .sub>li{}
-.sub>li:hover>a{text-shadow: 0 0 5px white;}
+.sub>li:hover>a{text-shadow: 0 0 5px #fff;}
 .sub>li a{
     display: block;
     height: 40px;
@@ -78,11 +82,14 @@ body{
 
 /* ///////////////////////////////////contents 영역/////////////////////////// */
 
-#contents{}
+#contents{
+   /* height: 100%; */
+}
 
 .box1{
     width: 100%; height: 988px;
     background-image: url("../img/main.gif");
+    background-repeat: no-repeat;
 }
 
 .box2{
@@ -95,7 +102,7 @@ body{
 }
 
 .pic{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 960px;
     height: 988px;
     display: flex;
@@ -106,7 +113,7 @@ body{
 
 .box2 .left1{
     width: 273px; height: 459px;
-    background: url("../img/doc2.jpg");
+    background: url("../img/doc1.jpg");
     margin-right: 100px;
 }
 .box2 .left2{
@@ -115,7 +122,8 @@ body{
 }
 
 .right{
-    border: 1px solid red;
+    margin-right: 170px;
+    /* border: 1px solid red; */
     /* width: 960px; */
     /* height: 988px; */
     text-shadow: 0 0 5px gray;
@@ -141,3 +149,216 @@ body{
 .right .h4-2{}
 .right .h4-3{}
 .right .h4-4{}
+
+
+/* <!-- ////////////////////////////////////////사진 4개 --> */
+
+.box3{
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+}
+
+.boxpic{
+    padding-top: 170px;
+    width: 480px; height: 970px;
+    /* border: 1px solid red; */
+    overflow: hidden; 
+    transition: all 0.5s;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.boxpic:hover{
+    background-size: 110%;
+}
+
+
+.boxpic>div>img{margin: 50px 0;}
+.boxpic>h2{margin-bottom: 30px;}
+.boxpic>p{margin-bottom: 30px; line-height: 1.5;}
+.boxpic>a{}
+.boxpic>a:hover{ border-bottom: 1px solid #fff;}
+
+
+.boxpic.box3_1{
+    background-image: url("../img/3-1.jpg");
+    
+}
+
+/* .icon:hover img{transform: scale(1.2);} */
+
+.boxpic.box3_2{
+    background-image: url("../img/3-2.jpg");
+    transition: all 0.5s;
+    
+}
+/* .box3_2:hover{transform: scale(1.2);} */
+
+.boxpic.box3_3{
+    background-image: url("../img/3-3.jpg");
+    transition: all 0.5s;
+    
+}
+/* .box3_3:hover{transform: scale(1.2);} */
+
+.boxpic.box3_4{
+    background-image: url("../img/3-4.jpg");
+    transition: all 0.5s;
+    
+}
+/* .box3_4:hover{transform: scale(1.2);} */
+
+
+/* ///////////////////////////////////////////////////////box4구역 */
+
+
+
+.box4{
+    position: relative;
+    height: 988px;
+}
+
+.box4_img{
+    
+    background: url(../img/shop2.jfif) no-repeat center / cover;
+    width: 100%; height: 988px;
+    filter: blur(3px) brightness(0.6);
+    text-indent: -9999px;
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.box4_inner{
+    /* border: 1px solid red; */
+    height: 988px;
+    width: 1320px;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.box4 h1{
+    margin-top: 200px;
+    font-size: 4rem;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.box4 h3{
+    /* border: 1px solid red; */
+    font-size: 1.4rem; 
+    letter-spacing: 2px; 
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.box4_pic{
+    overflow: hidden;
+    width: 350px; height: 270px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: right;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.box4_pic:hover{transform: scale(1.1); box-shadow: 0 0 8px #fff;}
+
+.box4_pic span{position: absolute;
+right: 10px; bottom: 10px;}
+
+    .box4_pic>a>img{height: 100%;}
+
+.box4_img1{}
+.box4_img2{}
+.box4_img3{}
+
+.detail_view{width: 100%;}
+    
+    .detail_view a{
+        display: block;
+        width: 250px;
+        height: 90px;
+        border: 1px solid #fff;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 90px;
+        margin: 0 auto; 
+    }
+
+    .detail_view a:hover{
+        box-shadow: 0 0 10px #fff;
+    }
+
+
+
+/* /////////////////////////box5구역////////////////////////// */
+
+.box5{
+    color: #696969;
+    background: url(../img/box5bg.png);
+    width: 100%; height: 988px;
+    /* border: 50px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.box5_con{
+    padding-top: 40px;
+    width: 450px;
+    height: 330px;
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 2;
+}
+
+.box5_con h3{font-size: 3rem;}
+.box5_con h2{font-size: 4rem;}
+.box5_con h4{font-size: 2rem;}
+
+.box5_con1{}
+.box5_con1 h2 a{transition: all 0.3s;}
+.box5_con1 h2:hover a{text-shadow: 0 0 10px #fff;}
+
+
+.box5_con2{}
+
+
+    .time{
+        padding-left: 110px;
+        /* border: 1px solid rebeccapurple; */
+        line-height: 1.5;
+        font-size: 1.3rem;
+        text-align: justify;}
+        
+
+
+.box5_con3 a img{transition: all 0.3s;}
+.box5_con3 a:hover img{transform: scale(1.2);}
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+

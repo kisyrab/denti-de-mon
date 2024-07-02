@@ -4,4 +4,4 @@ $(function(){
     }, function(){
         $(".sub").stop().slideUp()
     })
-})
+}) //j
