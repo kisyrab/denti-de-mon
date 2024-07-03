@@ -22,6 +22,7 @@ body{
     width: 100%;
     border-bottom: 1px solid #fff;
     /* position: fixed; */
+    
 }
 
 .main{
@@ -33,12 +34,13 @@ body{
     /* border: 1px solid red; */
 }
 
-.main>li{position: relative;}
+.main>li{position: relative; }
 
 .main>li>a{
     display: block;
     height: 145px;
     line-height: 145px;
+    text-align: ;
     /* border: 1px solid red; */
 }
 
@@ -54,16 +56,17 @@ body{
 .sub{
     /* display: none; */
     position: absolute;
-    left: 0; top: 145px;
+    left: -50px; top: 145px;
     width: 250%;
     font-size: 16px;
     display: none;
-    /* text-align: center; */
+    text-align: center;
     z-index: 50;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .sub>li{}
-.sub>li:hover>a{text-shadow: 0 0 5px #fff;}
+.sub>li:hover>a{text-shadow: 0 0 10px #534741; text-decoration: underline;}
 .sub>li a{
     display: block;
     height: 40px;
@@ -352,13 +355,181 @@ right: 10px; bottom: 10px;}
         
 
 
+/* <!-- ////////////////////////////footer영역/////////////////////////// --> */
 
 
+.footer{ color: #eee;
+font-weight: 100;}
+.f_up{
+    width: 100%; height: 275px;
+    background: #534741;
+    
+}
+.foot_inner{width: 1500px; margin: 0 auto;
+    display: flex; height: 275px;
+    align-items: center;
+}
+
+.f_logo{ 
+    width: 195px; height: 91px;
+    background: url("../img/full_logo.png") no-repeat;
+    text-indent: -9999px;
+    margin-left: 100px;
+}
+
+.f_box1{margin: 0 100px;}
+
+.f_box2{margin-left: 180px;}
+
+.f_menu{
+    /* margin-left: 220px; */
+}
+.f_menu li{
+    padding: 5px 0;
+}
+.f_menu li a{}
 
 
+.f_menu2{}
+.f_menu2 li{
+    color: #eee;
+    font-weight: 100;
+    display: inline-block;
+    margin-top: 10px;
+}
 
 
+.f_down{
+    width: 100%; height: 135px;
+    background: #3B302A;
+}
+
+.cs{line-height: 1.5; font-weight: 100; text-align: right;}
+.cs h3{}
+.cs h2{margin-bottom: 30px;}
+
+.sns{padding-left: 70px; }
+.sns li{
+
+    /* border: red 1px solid; */
+    display: inline-block;
+    width: 44px; height: 40px;
+    text-indent: -9999px;
+    margin: 10px 5px;
+}
+.goto{text-align: right; padding-left: 50px; font-weight: 100;}
+
+.sns_1{
+    background: url("../img/10030.png") no-repeat;
+}
+.sns_2{
+    background: url("../img/10031.png") no-repeat;
+}
+.sns_3{
+    background: url("../img/10032.png") no-repeat;
+}
+.sns_4{
+    background: url("../img/10033.png") no-repeat;
+}
 
 
+.f_down{
+    text-align: center;
+}
+
+.copy{
+    display: inline-block;
+    color: #696969;
+    padding: 30px 0;
+}
 
 
+/* /////////////////하단박스//////////////// */
+
+
+.cs_form_box{
+    width: 1500px;
+    height: 80px;
+    background: #2e2e2e;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px 20px 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.cs_form_box_logo{
+    width: 241px; height: 70px;
+    
+    background: url(../img/logo_hori.png) no-repeat center center;
+    /* border: 1px solid red; */
+    
+}
+
+.cs_form_box .form {
+    height: 70px;
+    /* border: 1px solid red;
+    background-color: blue;  */
+    padding-top: 17px;
+}
+
+.cs_form_box input{
+    width: 150px; height: 30px;
+    margin: 0 5px;
+}
+
+.cs_form_box form select{
+    margin: 0 15px;
+    padding-left: 150px;
+    width: 150px; height: 30px;
+}
+
+/* .checkbox{width: 10px !important; height: 10px !important;} */
+.checkbox{width: auto !important; height: auto !important;}
+
+
+.agree{display: inline-block; font-size: 14px; padding-right: 8px;}
+.agree a{color: goldenrod; }
+
+
+.cs_box{
+    /* border: 1px solid red; */
+    width: 200px; height: 60px;
+    background-color: #6d5a4f;
+    border-radius: 50px;
+}
+
+.cs_box:hover{background-color: #a18c81;}
+.cs_box a{
+    display: block;
+    line-height: 60px;
+    font-size: 2rem;
+    
+}
+
+
+            /* 스티키배너 */
+
+            .top{
+                width: 70px;
+                position: fixed;
+                left: 95%;
+                top: 500px;
+            }
+            
+            .top a{
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+            
+            .top .pos{
+                position: sticky;
+                /* top: 300px; */
+            }
+            
