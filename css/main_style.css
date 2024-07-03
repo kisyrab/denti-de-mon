@@ -101,7 +101,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    padding-left: 100px;
 }
 
 .pic{
@@ -114,7 +114,57 @@ body{
 }
 
 
-.box2 .left1{
+.inner{
+    position: relative;
+    width: 273px;
+    height: 459px;
+    transition: all 0.3s;
+    transform-style:preserve-3d;
+    perspective: 1000px;
+}
+
+.flip_box{
+    width: 273px;
+    height: 459px;
+    transform-style:preserve-3d;
+
+}
+
+.inner:hover {transform: rotateY(180deg);}
+.box{position: absolute;}
+.left1{width: 273px;
+    height: 459px;}
+.left2{transform: rotateY(180deg); backface-visibility: hidden;
+    width: 273px;
+    height: 459px;}
+
+    
+
+.inner2{
+    position: relative;
+    width: 480px;
+    height: 350px;
+    transition: all 0.3s;
+    transform-style:preserve-3d;
+    perspective: 1000px;
+}
+
+.flip_box2{
+    width: 480px;
+    height: 350px;
+    transform-style:preserve-3d;
+
+}
+
+.inner2:hover {transform: rotateY(180deg);}
+.boxbox{position: absolute;}
+.right1{width: 480px;
+    height: 350px;}
+.right2{transform: rotateY(180deg); backface-visibility: hidden;
+    width: 480px;
+    height: 350px;}
+
+/* .box2 .left1{
     width: 273px; height: 459px;
     background: url("../img/doc1.jpg");
     margin-right: 100px;
@@ -122,7 +172,7 @@ body{
 .box2 .left2{
     width: 273px; height: 459px;
     background: url("../img/tool1.jpg") no-repeat center / cover;
-}
+} */
 
 .right{
     margin-right: 170px;
@@ -406,7 +456,7 @@ font-weight: 100;}
 
 .cs{line-height: 1.5; font-weight: 100; text-align: right;}
 .cs h3{}
-.cs h2{margin-bottom: 30px;}
+.cs h2{margin-bottom: 30px; cursor: pointer;}
 
 .sns{padding-left: 70px; }
 .sns li{
@@ -416,6 +466,7 @@ font-weight: 100;}
     width: 44px; height: 40px;
     text-indent: -9999px;
     margin: 10px 5px;
+    cursor: pointer;
 }
 .goto{text-align: right; padding-left: 50px; font-weight: 100;}
 
